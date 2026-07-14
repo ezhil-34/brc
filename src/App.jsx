@@ -2,7 +2,8 @@ import React from "react";
 import BackgroundLayout from "./components/BackgroundLayout";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Events from "./components/Events"
+import Events from "./components/Events";
+import Team from "./components/Team";
 
 export default function App() {
   return (
@@ -43,14 +44,9 @@ export default function App() {
       </section>
 
       {/* Our Team Section */}
-      <section id="team" className="min-h-screen flex items-center justify-center border-t border-white/5 px-8 pb-24">
-        <div className="max-w-3xl text-center">
-          <h2 className="font-serif text-4xl text-[#d4a017] mb-6">Meet Our Team</h2>
-          <p className="text-slate-300 font-serif text-lg leading-relaxed">
-            Meet the library developers and platform creators working behind the curtains.
-          </p>
-        </div>
-      </section>
+     <div id="team">
+      <Team />
+     </div>
     </BackgroundLayout>
   );
 }

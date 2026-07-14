@@ -1,9 +1,6 @@
 import React from "react";
 import { BookOpen, Star, ArrowRight, Sparkles, Feather } from "lucide-react";
 
-import BOOK_IMAGE from "../assets/book.jpg"; 
-import LOGO_IMAGE from "../assets/logo.png";
-
 export default function Hero() {
   return (
     <div className="w-full">
@@ -13,7 +10,7 @@ export default function Hero() {
         {/* Left Side: Branding */}
         <div className="flex items-center gap-3 py-4 min-w-[260px]">
           <img
-            src={LOGO_IMAGE}
+            src="../assets/logo.png"
             alt="The Reader's Circle Logo"
             className="w-14 h-14 object-contain"
           />
@@ -74,7 +71,7 @@ export default function Hero() {
           <div className="relative p-3 rounded-[2rem] bg-white/[0.05] backdrop-blur-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
             <div className="relative rounded-2xl overflow-hidden bg-black border border-white/10">
               <img
-                src={BOOK_IMAGE}
+                src="../assets/book.jpg"
                 alt="Books, glasses and coffee on a table"
                 className="w-full h-[520px] object-cover"
               />
