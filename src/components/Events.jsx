@@ -23,7 +23,7 @@ const books = [
     accent: "#c99a1e",
     tint: "from-transparent via-black/10 to-black/85",
     title: "Twilight Conversations",
-    author: "by Kai Morrison",
+    
     cover: "/assets/love.png",
     description: "As the evening settles, stories come alive through thoughtful conversation."
   },
@@ -34,6 +34,14 @@ const books = [
     title: "Borrow a Story",
     description: "Take home a book today and return with memories after a week.",
     cover: "/assets/dd.jpeg",
+  },
+  {
+    categoryColor: "text-amber-300",
+    accent: "#c99a1e",
+    tint: "from-transparent via-black/10 to-black/85",
+    title: "With Love ❤️",
+    description: "Write to the one who made your campus days unforgettable—whether they knew it or not.",
+    cover: "/assets/letter.png",
   },
 ];
 
@@ -108,11 +116,7 @@ export default function Events() {
                       <h3 className="font-cinzel text-base text-amber-50 tracking-wide font-medium mb-1 transition-colors duration-500 group-hover:text-[#d4a017]">
                         {book.title}
                       </h3>
-                      {book.author && (
-                        <p className="text-[#d4a017] font-serif text-[10px] uppercase tracking-[0.12em]">
-                          {book.author}
-                        </p>
-                      )}
+                    
                     </div>
                   </div>
 
